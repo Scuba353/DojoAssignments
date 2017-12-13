@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		#ocean { 
+			background-image: url("ocean1.png");
+			width: 900px;
+			height: 900px;
+		}
+		.player {
+			background-image: url("player.png");
+			width: 70px;
+			height: 75px;
+			position: absolute;
+		}
+		.enemy {
+			background-image: url("enemy.png");
+			width: 70px;
+			height: 75px;
+			position: absolute;
+		}
+		.pewpews {
+			background-image: url("bullet.png");
+			width: 50px;
+			height: 50px;
+			position: absolute;
+
+		}
+	</style>
+
+	<div id="ocean">
+		<div id="players"></div>
+		<div id="jets"></div>
+		<div id="pewpews"></div>	
+				
+	</div>
+
+<script type="text/javascript">
+
+	var player= {top: 450, left: 600}
+
+
+ 	var jets = [
+ 		{top: 050, left: 100},
+ 		{top: 150, left: 200},
+ 		{top: 150, left: 300},
+ 		{top: 150, left: 400},
+ 		{top: 250, left: 500}
+ 		]
+
+ 	var pewpew = []
+
+function drawPlayer () {
+ content= "<div class='player' style= 'left:"+player.left+"px; top:"+player.top+"px'></div>"
+ document.getElementById("players").innerHTML= content;
+}
+
+function drawJets (){
+content= "";
+for(var idx=0; idx<jets.length; idx++){
+	content += "<div class='enemy' style= 'left:"+jets[idx].left+"px; top:"+jets[idx].top+"px'></div>";
+}
+document.getElementById("jets").innerHTML= content;
+}
+
+
+function moveJets(){
+	for(var idx=0; idx<jets.length; idx++){
+	jets[idx].top = jets[idx].top +5;
+}}
+
+
+function drawBullet(){
+	content= "";
+for(var idx=0; idx<pewpew.length; idx++){
+	content += "<div class='pewpews' style= 'left:"+pewpew[idx].left+"px; top:"+pewpew[idx].top+"px'></div>";
+}
+document.getElementById("pewpews").innerHTML= content;
+}
+
+
+function moveBullet(){
+	for(var idx=0; idx<pewpew.length; idx++){
+	pewpew[idx].top = pewpew[idx].top -10;
+}}
+
+
+document.onkeydown= function(e) {
+	console.log(e);
+	if(e.keyCode == 37) //left
+		{player.left= player.left-10;}
+	if(e.keyCode == 39) //right
+		{player.left= player.left+10;}
+	if(e.keyCode == 40 && player.top < 625) //down
+		{player.top= player.top+10;}
+	if(e.keyCode == 38 && player.top > 400) //up
+		{player.top= player.top-10;}
+	if(e.keyCode == 32) // fire bullet
+		{pewpew.push({left: (player.left+ 20), top: (player.top -40)});
+		drawBullet();
+}
+drawPlayer();
+}
+
+
+function gameLoop(){
+drawPlayer();
+
+moveJets();
+drawJets();
+
+moveBullet();
+drawBullet();
+
+setTimeout(gameLoop, 50)
+}
+gameLoop();
+
+
+</script>
+</body>
+</html>

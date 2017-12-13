@@ -1,0 +1,76 @@
+Last login: Mon Dec 11 17:45:25 on ttys000
+Allyses-MacBook-Pro:~ allysefischer$ pwd
+/Users/allysefischer
+Allyses-MacBook-Pro:~ allysefischer$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+Allyses-MacBook-Pro:~ allysefischer$ cd desktop
+Allyses-MacBook-Pro:desktop allysefischer$ mkdir gittest
+Allyses-MacBook-Pro:desktop allysefischer$ cd gittest
+Allyses-MacBook-Pro:gittest allysefischer$ touch index.html
+Allyses-MacBook-Pro:gittest allysefischer$ touch styles.css
+Allyses-MacBook-Pro:gittest allysefischer$ touch aboutMe.txt
+Allyses-MacBook-Pro:gittest allysefischer$ cd ..
+Allyses-MacBook-Pro:desktop allysefischer$ git add gittest
+fatal: Not a git repository (or any of the parent directories): .git
+Allyses-MacBook-Pro:desktop allysefischer$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Allyses-MacBook-Pro:desktop allysefischer$ cd gittest
+Allyses-MacBook-Pro:gittest allysefischer$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Allyses-MacBook-Pro:gittest allysefischer$ git init
+Initialized empty Git repository in /Users/allysefischer/Desktop/gittest/.git/
+Allyses-MacBook-Pro:gittest allysefischer$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Allyses-MacBook-Pro:gittest allysefischer$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Allyses-MacBook-Pro:gittest allysefischer$ git add .
+Allyses-MacBook-Pro:gittest allysefischer$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Allyses-MacBook-Pro:gittest allysefischer$ git commit -m "first commit"
+[master (root-commit) 41d2ccd] first commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Allyses-MacBook-Pro:gittest allysefischer$ vi aboutMe.txt
+
+I grew up in a small, rural town in upstate New York. After highschool I decided I needed to experience more than the constrains of that beautiful little town. I went as far away in state, to save on tuition cost, as I could from home. I spent the next few years in Buffalo, NY studing Forensic Chemistry and Biology. After my masters program I landed myself in Chicago looking for more job opurtunities. I found myself working for Cook County Medical Examiner as a toxicologist. It was a great postion, something new and different every day but then I was laid off.
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+

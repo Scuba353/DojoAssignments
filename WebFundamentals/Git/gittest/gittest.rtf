@@ -1,0 +1,139 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red180\green36\blue25;
+\red47\green180\blue29;\red159\green160\blue28;\red46\green174\blue187;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c76409\c21698\c12524;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c68468\c68012\c14208;\cssrgb\c20196\c73240\c78250;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Mon Dec 11 17:45:25 on ttys000\
+Allyses-MacBook-Pro:~ allysefischer$ pwd\
+/Users/allysefischer\
+Allyses-MacBook-Pro:~ allysefischer$ ls\
+Applications	Documents	Library		Music		Public\
+Desktop		Downloads	Movies		Pictures\
+Allyses-MacBook-Pro:~ allysefischer$ cd desktop\
+Allyses-MacBook-Pro:desktop allysefischer$ mkdir gittest\
+Allyses-MacBook-Pro:desktop allysefischer$ cd gittest\
+Allyses-MacBook-Pro:gittest allysefischer$ touch index.html\
+Allyses-MacBook-Pro:gittest allysefischer$ touch styles.css\
+Allyses-MacBook-Pro:gittest allysefischer$ touch aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ cd ..\
+Allyses-MacBook-Pro:desktop allysefischer$ git add gittest\
+fatal: Not a git repository (or any of the parent directories): .git\
+Allyses-MacBook-Pro:desktop allysefischer$ git status\
+fatal: Not a git repository (or any of the parent directories): .git\
+Allyses-MacBook-Pro:desktop allysefischer$ cd gittest\
+Allyses-MacBook-Pro:gittest allysefischer$ git status\
+fatal: Not a git repository (or any of the parent directories): .git\
+Allyses-MacBook-Pro:gittest allysefischer$ git init\
+Initialized empty Git repository in /Users/allysefischer/Desktop/gittest/.git/\
+Allyses-MacBook-Pro:gittest allysefischer$ git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf4 aboutMe.txt\cf2 \
+	\cf4 index.html\cf2 \
+	\cf4 styles.css\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Allyses-MacBook-Pro:gittest allysefischer$ git add\
+Nothing specified, nothing added.\
+Maybe you wanted to say 'git add .'?\
+Allyses-MacBook-Pro:gittest allysefischer$ git add .\
+Allyses-MacBook-Pro:gittest allysefischer$ git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+\
+	\cf5 new file:   aboutMe.txt\cf2 \
+	\cf5 new file:   index.html\cf2 \
+	\cf5 new file:   styles.css\cf2 \
+\
+Allyses-MacBook-Pro:gittest allysefischer$ git commit -m "first commit"\
+[master (root-commit) 41d2ccd] first commit\
+ 3 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 aboutMe.txt\
+ create mode 100644 index.html\
+ create mode 100644 styles.css\
+Allyses-MacBook-Pro:gittest allysefischer$ vi aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git add aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git commit -m "added bio to about me"\
+[master 60aeeb7] added bio to about me\
+ 1 file changed, 1 insertion(+)\
+Allyses-MacBook-Pro:gittest allysefischer$ vi aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git add aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git commit -m "added favorite movie to about me"\
+[master 1739e9d] added favorite movie to about me\
+ 1 file changed, 3 insertions(+)\
+Allyses-MacBook-Pro:gittest allysefischer$ git log\
+\cf6 commit 1739e9df9fdc198c52b5e5c413287887d2605d47 (
+\f1\b \cf7 HEAD -> \cf5 master
+\f0\b0 \cf6 )\cf2 \
+Author: Allyse Fischer <scuba353@gmail.com>\
+Date:   Mon Dec 11 20:27:44 2017 -0800\
+\
+    added favorite movie to about me\
+\
+\cf6 commit 60aeeb74b4299d9d7de02e75b333e9100dde18e3\cf2 \
+Author: Allyse Fischer <scuba353@gmail.com>\
+Date:   Mon Dec 11 20:23:19 2017 -0800\
+\
+    added bio to about me\
+\
+\cf6 commit 41d2ccd56217205add8dc97b6dc73016e1e30675\cf2 \
+Author: Allyse Fischer <scuba353@gmail.com>\
+Date:   Mon Dec 11 20:13:11 2017 -0800\
+\
+    first commit\
+Allyses-MacBook-Pro:gittest allysefischer$ git revert -n HEAD\
+Allyses-MacBook-Pro:gittest allysefischer$ git revert -n 1739e9d\
+Allyses-MacBook-Pro:gittest allysefischer$ git status\
+On branch master\
+You are currently reverting commit 1739e9d.\
+  (all conflicts fixed: run "git revert --continue")\
+  (use "git revert --abort" to cancel the revert operation)\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf5 modified:   aboutMe.txt\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf4 aboutMe\cf2 \
+\
+Allyses-MacBook-Pro:gittest allysefischer$ git revert --continue\
+[master 9b7e32f] Revert "added favorite movie to about me"\
+ 1 file changed, 3 deletions(-)\
+Allyses-MacBook-Pro:gittest allysefischer$ vi aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git add aboutMe.txt\
+Allyses-MacBook-Pro:gittest allysefischer$ git commit\
+[master b6a3895] git commit -m "updated about me to have favorite book"\
+ 1 file changed, 2 insertions(+)\
+Allyses-MacBook-Pro:gittest allysefischer$ git status\
+On branch master\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf4 aboutMe\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Allyses-MacBook-Pro:gittest allysefischer$ git add\
+Nothing specified, nothing added.\
+Maybe you wanted to say 'git add .'?\
+Allyses-MacBook-Pro:gittest allysefischer$ git add .\
+Allyses-MacBook-Pro:gittest allysefischer$ git commit -m "aboutme file added in error i believe"\
+[master 86cbc75] aboutme file added in error i believe\
+ 1 file changed, 76 insertions(+)\
+ create mode 100644 aboutMe\
+Allyses-MacBook-Pro:gittest allysefischer$ }
