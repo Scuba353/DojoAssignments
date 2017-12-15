@@ -84,12 +84,7 @@ img#python {
 }
 ul { list-style: none; }
 
-ul#pgtabs li:before {
-  content: '\00BB'; 
-  text-decoration: none;
-  color: #f5cf35;
-  font-size: 12px;
-}
+
 #pgtabs{
 	display: inline-block;
 	color: white;
@@ -98,6 +93,12 @@ ul#pgtabs li:before {
 	text-decoration: underline;
 	line-height: 1.4;
 	font-family: "Times New Roman", Georgia, Serif;
+}
+ul#pgtabs li:before {
+  content: '\00BB'; 
+  text-decoration: none;
+  color: #f5cf35;
+  font-size: 12px;
 }
 #maintext{
 	color: white;
