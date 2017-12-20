@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="uft-8">
+	<title>Fancy Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+   function FancyArray(arr, symb="::", rvs){
+    if(rvs===true){
+        for(var i=arr.length-1; i>=0;i--){
+            console.log(arr[i], symb, i);
+        }
+    }
+        else{for(var i=0; i<arr.length;i++){
+            console.log(i, symb, arr[i]);
+        }
+    }
+}
+
+
+   FancyArray(["James", "Jill", "Jane", "Jack"], "-->");
+      
+    </script>
+</body>
+</html>

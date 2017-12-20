@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>J Query</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#hideme").click(function(){
+          $("#showhidemetext").hide();
+          })
+        $("#showme").click(function(){
+          $("#showhidemetext").show();
+          })
+        $("#toggleme").click(function(){
+          $("#togglemetext").toggle();
+          })
+        $("#slidemedown").click(function(){
+          $("#slidemedowntext").slideDown();
+          })
+        $("#slidemeup").click(function(){
+          $("#slidemedowntext").slideUp();
+          })
+        $("#slidetoggleme").click(function(){
+          $("#slidetogglemetext").slideToggle();
+          })
+        $("#fademein").click(function(){
+          $("#fademeintext").fadeIn();
+          })
+        $("#fademeout").click(function(){
+          $("#fademeintext").fadeOut();
+          })
+        $("#addmeclass").click(function(){
+          $("h3").addClass("green");
+          })
+        $("#beforeme").click(function(){
+          $("#beforemetext").before("<p>New paragraph element added before the original paragraph tag.</p>");
+          })
+        $("#afterme").click(function(){
+          $("#aftermetext").after("<p>New paragraph element added after the original paragraph tag</p>");
+          })
+        $("#appendme").click(function(){
+          $("#appendmetext").append(" Additional text is added to the original element.");
+          })
+        $("#htmlme").click(function(){
+          $("#htmlmetext").html("The content of the element called on is completly changed");
+          })
+        $('#photome').hover(function(){
+        var title = $("#photome").attr("alt")
+        $('#attrmetext').text(title);
+        })
+
+        $("#valme").click(function(){
+          alert( $("input:text").val());
+          })
+        $( "#valmeset" ).click(function() {
+          var text = $( this ).text();
+          $( "input" ).val("Inputs text in box");
+          })
+        $("#textme").click(function(){
+          $("#textmetext").text("Sets text of selected element to new text");
+          }) 
+        $("#textmeget").click(function(){
+          alert($("h3").text())
+        })
+      }) /*end of jQuery*/
+
+    </script>
+
+  <style>
+    
+    div { 
+    border-width: 3px;
+    border-style: solid;
+    border-color: grey;
+    width: 550px;
+    height: 175px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    }
+
+    button{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #5c4aa5;
+    background-color: #5c4aa5;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+
+    }
+
+    h3 {
+      background:linear-gradient(#5c4aa5, grey, white);
+      height:40px;
+      width: 550px;
+      margin: 0px;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 40px;
+    }
+    .green {
+      color: #71e071;
+    }
+
+  </style>
+  </head>
+    
+  <body>
+    <div>
+      <h3>.hide and .show</h3>
+      <button id="hideme">.hide</button>
+      <button id="showme">.show</button>
+      <p id= "showhidemetext">When the hide button is clicked this text will be hidden.  Then when the show button is clicked the text will reappear!</p> 
+    </div>
+    <div>
+    <h3>.toggle</h3>
+      <button id="toggleme">.toggle</button>
+      <p id= "togglemetext">When toggle button is clicked, the text will alternate between appear and hidden.</p>
+    </div>
+    <div>
+    <h3>.slideDown and .slideUp</h3>
+      <button id="slidemedown">.slideDown</button>
+      <button id="slidemeup">.slidemeUp</button>
+      <p id= "slidemedowntext">When the slideDown button is clicked this text will slide down and appear from an apparent top.  Then when the slideUp button is clicked the text will slide towards the top and disapear!</p>
+    </div>
+    <div>
+    <h3>.slidetoggle</h3>
+      <button id="slidetoggleme">.slideToggle</button>
+      <p id= "slidetogglemetext">When toggle button is clicked the text will alternate between slide up and slide down.</p>
+    </div>
+    <div>
+    <h3>.fadein and .fadeout</h3>
+      <button id="fademein">.fadeIn</button>
+      <button id="fademeout">.fadeOut</button>
+      <p id= "fademeintext">When fade in is clicked the text will fade in and when fade out the text will fade out and disapear.</p>
+    </div>
+    <div>
+    <h3>.addclass</h3>
+      <button id="addmeclass">.addClass</button>
+      <p id= "addmeclasstext">Add a class attribute to the called element in this case the headers and then you can add css styling to the new class.  Helpful in adding the same class to an element throughout a document.</p>
+    </div>
+    <div>
+    <h3>.before</h3>
+      <button id="beforeme">.before</button>
+      <p id= "beforemetext">When the button is clicked new text is added before the element tag as a new element.</p>
+    </div>
+    <div>
+    <h3>.after</h3>
+      <button id="afterme">.after</button>
+      <p id= "aftermetext">When the button is clicked new text is added after the element tag as a new element.</p>
+    </div>
+    <div>
+    <h3>.append</h3>
+      <button id="appendme">.append</button>
+      <p id= "appendmetext">When the button is clicked new text is added to the current element called on. It is addeded directly to the end of the current element.</p>
+    </div>
+    <div>
+    <h3>.html</h3>
+      <button id="htmlme">.html</button>
+      <p id= "htmlmetext">When this button is clicked the content of the HTML element is changed.</p>
+    </div>
+    <div>
+      <h3>.attr</h3>
+      <img id="photome" src="img/black_bg.jpg" alt="dojologo" width="50" height="50">
+      <p id= "attrmetext"> Hover over the picture for the alternate picture atribute to appear.</p>
+    </div>
+    <div>
+    <h3>.val</h3>
+      <button id="valme">.val(get)</button>
+      <button id="valmeset">.val(set)</button>
+      <input type="text" name="text">
+      <p>When text is typed in the text box, an alert will be triggered when the button is clicked indicating the data typed in the text box. The val set inputs data into the text box.</p>
+    </div>
+    <div>
+    <h3>.text</h3>
+      <button id="textme">.text(set)</button>
+      <button id="textmeget">.text(get)</button>
+      <p id= "textmetext">When set button is clicked the text of the selected element will be set to new text. When the get button is clicked it will grab the text of another element such as all of the headers that are returned in the alert!</p>
+    </div>  
+  </body>
+</html>

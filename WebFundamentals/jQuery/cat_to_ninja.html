@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CAT TO NINJA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+    //     $('#cat0').click(function(){
+    // $('#cat0').attr('src', "img/ninja0.png");
+    // });
+    //     $('#cat1').click(function(){
+    // $('#cat1').attr('src', "img/ninja1.png");
+    // });
+    //     $('#cat2').click(function(){
+    // $('#cat2').attr('src', "img/ninja2.png");
+    // });   
+    //     $('#cat3').click(function(){
+    // $('#cat3').attr('src', "img/ninja3.png");
+    // });
+    //     $('#cat4').click(function(){
+    // $('#cat4').attr('src', "img/ninja4.png");
+    // });
+    $('img').click(function(){
+        $(this).attr('temp', $(this).attr('src'));
+        //Step 1: temp value becomes the src value of the parent image using (this) which refers to the parent
+        $(this).attr('src', $(this).attr('alt-src'));
+        //Step 2: src value is replaced by the alt-src value
+        $(this).attr('alt-src', $(this).attr('temp'));
+        //Step 3: alt-src value is replaced with the temp value that was put into temp at step 1
+        console.log("Temp:"+ $(this).attr('src'))
+        console.log("Src:"+ $(this).attr('alt-src'))
+        console.log("Alt-src:"+ $(this).attr('temp'))
+
+    })
+
+
+      }) /*end of jQuery*/
+
+    </script>
+
+  <style>
+    
+    img { 
+      height: 100px;
+      width: 300px;
+      display: block;
+   
+    }
+
+    button{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #5c4aa5;
+    background-color: #5c4aa5;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+
+    }
+
+  </style>
+  </head>
+    
+  <body>
+    <div>
+      <img id="cat0" class="disapear" src="img/cat0.png" alt-src="img/ninja0.png" temp="">
+      <img id="cat1" class="disapear" src="img/cat1.png" alt-src="img/ninja1.png" temp="">
+      <img id="cat2" class="disapear" src="img/cat2.png" alt-src="img/ninja2.png" temp="">
+      <img id="cat3" class="disapear" src="img/cat3.png" alt-src="img/ninja3.png" temp="">
+      <img id="cat4" class="disapear" src="img/cat4.png" alt-src="img/ninja4.png" temp="">
+      </div>
+      <!-- <div>
+      <button id="restore">Restore</button>
+      <p>Click on sections of the cat to change the image to a ninja. Click restore to restore the image to the cat. </p>
+      </div> -->
+  </body>
+</html>

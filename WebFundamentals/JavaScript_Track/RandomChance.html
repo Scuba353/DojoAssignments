@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="uft-8">
+	<title>Slots</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var winNum=25
+        // var quarters=50
+
+        function Slots(quarters){
+            while(quarters>0){
+                if(winNum===((Math.trunc(Math.random()*100)+1))){
+                    quarters=quarters+(Math.floor((Math.random()*50)+51));
+                    console.log(quarters)
+                }
+                quarters=quarters-1;
+                if(quarters === 0){
+                    console.log(quarters)
+                }
+
+            }
+        }
+        Slots(4);
+  
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Disappering Ninja</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#dissapear1").click(function(){
+          $("#dissapear1").hide();
+          })
+        $("#dissapear2").click(function(){
+          $("#dissapear2").hide();
+          })
+        $("#dissapear3").click(function(){
+          $("#dissapear3").hide();
+          })
+        $("#dissapear4").click(function(){
+          $("#dissapear4").hide();
+          })
+        $("#dissapear5").click(function(){
+          $("#dissapear5").hide();
+          })
+        $("#dissapear6").click(function(){
+          $("#dissapear6").hide();
+          })
+        $("#dissapear7").click(function(){
+          $("#dissapear7").hide();
+          })
+        $("#dissapear8").click(function(){
+          $("#dissapear8").hide();
+          })
+        $("#restore").click(function(){
+          $(".disapear").show();
+          })
+        
+
+
+      }) /*end of jQuery*/
+
+    </script>
+
+  <style>
+    
+    img { 
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+   
+    }
+
+    button{
+    border-width: 3px;
+    border-style: solid;
+    border-color: #5c4aa5;
+    background-color: #5c4aa5;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+
+    }
+
+  </style>
+  </head>
+    
+  <body>
+    <div>
+      <img id="dissapear1" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear2" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear3" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear4" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear5" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear6" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear7" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      <img id="dissapear8" class="disapear" src="img/stormtroopocat.png" alt="troopercat">
+      </div>
+      <div>
+      <button id="restore">Restore</button>
+      <p>Click the StormTrooper Cats to make them disappear.  Once they have all disappeared click Restore to return the images.</p>
+      </div>
+  </body>
+</html>
