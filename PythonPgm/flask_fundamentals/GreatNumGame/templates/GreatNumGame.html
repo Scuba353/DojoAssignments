@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers Game</title>
+	<style>
+		body{
+			text-align: center;
+		}
+		div.box{
+			height: 100px;
+			width: 150px
+			border: 1px black;
+			display: inline-block;
+			color: white;
+			padding-top: 50px;
+		}
+		.wrong{
+			background-color: red;
+		}
+		.correct{
+			background-color: green;
+			vertical-align: top;
+		}
+	</style>
+</head>
+<body>
+<h1>Welcome to the Great Numbers game!</h1>
+<p>I am thinking of a number 1 - 100</p>
+<p>Take A Guess!</p>
+
+{% if session['guess'] %}
+	{% if session['guess'] == "low" %}
+		<div class='box wrong'>
+			<p>You guessed too Low!</p>
+		</div>
+	{% elif session['guess'] == "correct" %}
+		<div class='box correct'>
+			<p>You guessed Correct!</p>
+			<form action='/reset' method='POST'>
+				<input type="submit" name="Reset" value="Reset">
+			</form>
+		</div>
+	{% elif session['guess'] == "high" %}
+		<div class='box wrong'>
+			<p>You guessed too High!</p>
+		</div>
+	{% endif %}
+{% endif %}
+{% if session['guess'] != 'correct' %}
+	<form action='/result' method='POST'>
+		<input type="text" name="guess"><br>
+		<input type="submit" name="Submit">
+{% endif %}
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success</title>
+</head>
+<body>
+
+	<h3>You are logged in as:</h3>
+	
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		    {% for message in messages %}
+		    	<p>{{message}}</p>
+		    {% endfor %}
+		{% endif %}
+	{% endwith %}
+
+	{{ first_name }} {{ last_name }} <br>
+	{{ email }}
+
+</body>
+</html>

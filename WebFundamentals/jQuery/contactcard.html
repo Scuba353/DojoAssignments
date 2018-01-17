@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Userform</title>
+	<link rel="stylesheet" type="text/css" href="debugging_jquery.css">
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript">
+
+
+		$(document).ready(function(){
+			$(".addcontact").click(function(){
+	            var firstname = $("#first").val();
+	            var lastname = $("#last").val();
+	            var email = $("#email").val();
+	            var contact = $("#contact").val();
+	            var description = $("#description").val();
+	            var markup = "<div class='card'><div class='individual'>" + firstname + ' ' + lastname + "<br>" + email + "<br>" + contact + "</div><div class='back' style='display: none'>" + description + "</div></div>"
+	            $("div#contactcards").append(markup);
+	        });
+	        $(document).on('append', 'div.card', function(){
+	        	$('div.card').css();
+	        });
+
+	        $(document).on('click', 'div.card', function(){
+	        	$(this).children().toggle();
+	        	})
+	    })
+		
+	 //end of jquery
+	</script>
+	<style>
+		div.card{
+			height: 250px;
+			width: 200px;
+			border-width: 3px;
+			border-color: grey;
+			border-style: solid;
+		}	
+	</style>
+</head>
+<body>
+	<div id="contactform">
+		<h2>Contact Card</h2>
+		<form>
+			<p>First Name <input id="first" type="text" name="firstname"></p>
+			<p>Last Name <input id="last" type="text" name="lastname"></p>
+			<p>Email Address <input id="email" type="text" name="email"></p>
+			<p>Contact Number <input id="contact" type="text" name="firstname"></p>
+			<p>Description <input id="description" type="text" name="description"></p>
+		</form>
+		<button class="addcontact">Add Contact</button>
+</div>
+<div id="contactcards"></div>
+
+
+	
+</body>
+</html>

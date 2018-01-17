@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red48\green61\blue72;\red0\green0\blue0;\red184\green14\blue61;
+\red63\green63\blue63;\red255\green255\blue255;\red247\green238\blue241;}
+{\*\expandedcolortbl;;\cssrgb\c24314\c30588\c35294;\csgray\c0\c0;\cssrgb\c78039\c14510\c30588;
+\cssrgb\c31373\c31373\c31373;\cssrgb\c100000\c100000\c100000;\cssrgb\c97647\c94902\c95686;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The following is a list of commonly used string methods:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\b0 \cf4 \strokec4 string.count(substring)
+\f0 \cf5 \strokec5 : returns number of occurrences of substring in string.\
+\ls1\ilvl0
+\f1 \cf4 \strokec4 string.endswith(substring)
+\f0 \cf5 \strokec5 : returns a boolean based upon whether the last characters of string match substring.\
+\ls1\ilvl0
+\f1 \cf4 \strokec4 string.find(substring)
+\f0 \cf5 \strokec5 : returns the index of the start of the first occurrence of substring within string.\
+\ls1\ilvl0
+\f1 \cf4 \strokec4 string.isalnum()
+\f0 \cf5 \strokec5 : returns boolean depending on whether the string's length is > 0 and all characters are alphanumeric (letters and numbers only). Strings that include spaces and punctuation will return False for this method. Similar methods include\'a0
+\f1 \cf4 \strokec4 .isalpha()
+\f0 \cf5 \strokec5 ,\'a0
+\f1 \cf4 \strokec4 .isdigit()
+\f0 \cf5 \strokec5 ,\'a0
+\f1 \cf4 \strokec4 .islower()
+\f0 \cf5 \strokec5 ,\'a0
+\f1 \cf4 \strokec4 .isupper()
+\f0 \cf5 \strokec5 , and so on. All return booleans.\
+\ls1\ilvl0
+\f1 \cf4 \strokec4 string.join(list)
+\f0 \cf5 \strokec5 : returns a string that is all strings within our set (in this case a list) concatenated.\
+\ls1\ilvl0
+\f1 \cf4 \strokec4 string.split()
+\f0 \cf5 \strokec5 : returns a list of values where string is split at the given character. Without a parameter the default split is at every space.
+\fs28 \cb1 \
+\'97\'97\'97\'97\'97\'97\'97\
+Sequence is anything that can be iterated through such as a list, tuples and string\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\b \cf2 \cb6 \strokec2 len(sequence)
+\b0 \cf5 \strokec5 : Returns the number of items in a sequence.\
+\pard\pardeftab720\sl480\sa80\partightenfactor0
+
+\b \cf2 \cb1 \strokec2 Some built-in functions for sequences:\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1\b0\fs24 \cf4 \cb3 \strokec4 enumerate(sequence)
+\f0 \cf5 \strokec5 \'a0used in a for loop context to return two-item-tuple for each item in the list indicating the index followed by the value at that index.\
+
+\f1 \cf4 \strokec4 map(function, sequence)
+\f0 \cf5 \strokec5 \'a0applies the function to every item in the sequence you pass in. Returns a list of the results.\
+
+\f1 \cf4 \strokec4 min(sequence)
+\f0 \cf5 \strokec5 \'a0returns the lowest value in a sequence.\
+
+\f1 \cf4 \strokec4 sorted(sequence)
+\f0 \cf5 \strokec5 \'a0returns a sorted sequence\
+\
+\pard\pardeftab720\sl480\sa80\partightenfactor0
+
+\b\fs28 \cf2 \cb1 \strokec2 The following are some commonly used list methods:\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1\b0\fs24 \cf4 \cb3 \strokec4 list.extend(list2)
+\f0 \cf5 \strokec5 \'a0adds all values from a second sequence to the end of the original sequence.\
+
+\f1 \cf4 \strokec4 list.pop(index)
+\f0 \cf5 \strokec5 \'a0remove a value at given position. if no parameter is passed, defaults to final value in the list.\
+
+\f1 \cf4 \strokec4 list.index(value)
+\f0 \cf5 \strokec5 \'a0returns the index position in a list for the given parameter.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs28 \cf2 \strokec2 You may recognize some of these built-in functions for sequences:
+\fs24 \
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1\b0 \cf4 \strokec4 max(sequence)
+\f0 \cf5 \strokec5 \'a0returns the largest value in the sequence\
+
+\f1 \cf4 \strokec4 sum(sequence)
+\f0 \cf5 \strokec5 \'a0return the sum of all values in sequence\
+
+\f1 \cf4 \strokec4 enumerate(sequence)
+\f0 \cf5 \strokec5 \'a0used in a for-loop context to return two-item-tuple for each item in the sequence indicating the index followed by the value at that index.\
+
+\f1 \cf4 \strokec4 map(function, sequence)
+\f0 \cf5 \strokec5 \'a0applies the function to every item in the sequence you pass in. Returns a list of the results.\
+
+\f1 \cf4 \strokec4 min(sequence)
+\f0 \cf5 \strokec5 \'a0returns the lowest value in a sequence.\
+
+\f1 \cf4 \strokec4 sorted(sequence)
+\f0 \cf5 \strokec5 \'a0returns a sorted sequence\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb1 Python includes the following standalone functions for dictionaries:\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb7 \strokec4 cmp(dict1, dict2)
+\f0 \cf5 \cb1 \strokec5 \'a0- Compares two dictionaries. The comparison process starts with the length of each dictionary, followed by key names, followed by values. The function returns 0 if the two\'a0dicts are equal, -1 if dict1 > dict2, 1 if dict1 < dict2.\
+
+\f1 \cf4 \cb7 \strokec4 len()\'a0
+\f0 \cf5 \cb1 \strokec5 - give the total length of the dictionary.\
+
+\f1 \cf4 \cb7 \strokec4 str()\'a0
+\f0 \cf5 \cb1 \strokec5 - produces a string representation of a dictionary.\
+
+\f1 \cf4 \cb7 \strokec4 type()\'a0
+\f0 \cf5 \cb1 \strokec5 - returns the type of the passed variable. If passed variable is a dictionary, it will then return a\'a0
+\i dictionary
+\i0 \'a0type.\
+\pard\pardeftab720\partightenfactor0
+\cf5 Python includes the following dictionary methods:\uc0\u8232 (either\'a0
+\f1 \cf4 \cb7 \strokec4 dict.method(yourDictionary)\'a0
+\f0 \cf5 \cb1 \strokec5 or\'a0
+\f1 \cf4 \cb7 \strokec4 yourDictionary.method()\'a0
+\f0 \cf5 \cb1 \strokec5 will work)\
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1 \cf4 \cb7 \strokec4 .clear()
+\f0 \cf5 \cb1 \strokec5 \'a0- removes all elements from the dictionary\
+
+\f1 \cf4 \cb7 \strokec4 .copy()\'a0
+\f0 \cf5 \cb1 \strokec5 - returns a shallow copy dictionary\
+
+\f1 \cf4 \cb7 \strokec4 .fromkeys(sequence, [value] )
+\f0 \cf5 \cb1 \strokec5 \'a0- create a new dictionary with keys from sequence and values set to value.\
+
+\f1 \cf4 \cb7 \strokec4 .get(key, default=None)
+\f0 \cf5 \cb1 \strokec5 \'a0- For key\'a0
+\i key
+\i0 , returns value or default if key is not in dictionary.\
+
+\f1 \cf4 \cb7 \strokec4 .has_key(key)\'a0
+\f0 \cf5 \cb1 \strokec5 - returns true if a given key is available in the dictionary, otherwise it returns false.\
+
+\f1 \cf4 \cb7 \strokec4 .items()
+\f0 \cf5 \cb1 \strokec5 \'a0- returns a list of dictionary's (key, value) tuple pairs.\
+
+\f1 \cf4 \cb7 \strokec4 .keys()
+\f0 \cf5 \cb1 \strokec5 \'a0- return a list of dictionary keys.\
+
+\f1 \cf4 \cb7 \strokec4 .setdefault(key, default=None)
+\f0 \cf5 \cb1 \strokec5 \'a0- similar to get(), but will set dict[key]=default if key is not already in dictionary.\
+
+\f1 \cf4 \cb7 \strokec4 .update(dict2)
+\f0 \cf5 \cb1 \strokec5 \'a0= adds dictionary dict2's key-values pairs to an existing dictionary.\
+
+\f1 \cf4 \cb7 \strokec4 .values()
+\f0 \cf5 \cb1 \strokec5 \'a0- returns list of dictionary values.\
+\pard\tx720\pardeftab720\partightenfactor0
+\cf5 \cb3 \
+\
+\pard\pardeftab720\sl340\partightenfactor0
+
+\b\fs28 \cf2 \cb6 \strokec2 **  zip()
+\b0 \cf5 \strokec5 . The name zip was well chosen because the two lists get combined like a zipper.\
+
+\b **
+\b0  2-tuple list form. This form can be easily transformed into a real dictionary with the 		function\'a0
+\b \cf2 \strokec2 dict()
+\b0 \cf5 \strokec5 .
+\fs24 \cb3 \
+\pard\tx720\pardeftab720\partightenfactor0
+\cf5 \
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AlgoBook</title>
+    <script type="text/javascript">
+    
+    //Threes and Fives pg.29
+
+    function ThreeFive(start, end){
+ 		var sum= 0;
+ 		for(var i=start; i<=end; i++){
+ 			if(i%3 == 0 && i%5 == 0){
+ 				continue;
+ 			}
+ 			else if(i%3 == 0 || i%5 == 0){
+ 				sum=sum+i;
+ 			}
+ 		}
+ 		return sum;
+	}
+	console.log(ThreeFive(100, 400000))
+	
+	//Generate coin Chanege pg.29
+	var Legend= {
+		penny: 1,
+		nickle: 5,
+		dime: 10,
+		quarter: 25,
+	}
+
+	function Change(cents, Legend){
+		var change= {}
+		change.quarter=Math.floor(cents/Legend.quarter);
+		change.dime=Math.floor((cents%Legend.quarter)/Legend.dime);
+		change.nickle=Math.floor(((cents%Legend.quarter)%Legend.dime)/Legend.nickle);
+		change.penny=Math.floor(((cents%Legend.quarter)%Legend.dime)%Legend.nickle);
+
+		return change
+	}
+	console.log(Change(94, Legend))
+
+	//Messy Math Mashup pg.29
+	function messyMath(num){
+		var sum= 0
+		for(var i=0; i<=num; i++){
+			if(i == num/3){
+				return -1
+			}
+			if(i%3 == 0){
+				continue;
+			}
+			else if(i%7 == 0){
+				sum= sum+i+i
+			}
+			else{
+				sum= sum+i
+			}
+		}
+		return sum;
+	}
+	console.log(messyMath(4));
+	console.log(messyMath(8));
+	console.log(messyMath(15));
+
+	//Twelve-bar blues pg.30
+	function TwelveBarBlues(){
+		for(var i=1; i<=12; i++){
+			console.log(i);
+			console.log("chick");
+			console.log("boom");
+			console.log("chick");
+		}
+	}
+	TwelveBarBlues()
+
+	//Fibonacci pg.30
+	function Fibonacci(idx){
+		var fiblist= [0,1]
+		for(var i=0; i<=idx; i++){
+			fiblist.push(fiblist[i]+fiblist[i+1])
+		}
+		// console.log(fiblist)
+		return (fiblist[idx-1]+fiblist[idx-2])
+	}
+	console.log(Fibonacci(2))
+	console.log(Fibonacci(6))
+
+	//Sum to one Digit p.30
+		//unsolved
+
+	//Clock hand angles p.30
+	function clockHandAngles(seconds){
+		var hour=0
+		var min=0
+		var sec=0
+
+		if(seconds>=3600){
+			hour= ((seconds/3600)*30)
+			// min= (seconds-hour)
+			// while(hour>=360){
+			// 	hour= hour-360
+			// }
+		}
+		// if(seconds>=360){
+		// 	min=((90+((0.5/60)*seconds)))
+		// 	while(min>=360){
+		// 		min= min-360
+		// 	}
+		}
+		if(seconds>=0){
+			sec= ((seconds-hour-min)*6)
+			while(sec>360){
+				sec=sec-360
+			}
+		}
+		return min
+
+
+		}
+
+
+	console.log(clockHandAngles(119730))
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
