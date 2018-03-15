@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokes</title>
+</head>
+<body>
+		<p><a href="/logout">Logout</a></p>
+		<p>Success! Welcome {{request.session.name}}</p>
+
+
+
+
+		<h2>People you may want to poke:</h2>
+		<table>
+	<tr>
+		<th>Name</th>
+		<th>Alias</th>
+		<th>Email</th>
+		<th>Poke History</th>
+		<th>Action</th>
+	</tr>
+	{% for p in people_to_poke %}
+	<tr>
+		<td>{{ p.name }}</td>
+		<td>{{ p.alias }}</a></td>
+		<td>{{ p.email }}</td>
+		<td>{{ count.count }}</td>
+		<td><a href="/createpoke/{{p.id}}">Poke</a></td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

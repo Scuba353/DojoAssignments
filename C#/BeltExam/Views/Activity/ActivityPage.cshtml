@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>All the Games</p>
+
+<table>
+    <tr>
+        <th>**Activity**</th>
+        <th>**Date and Time**</th>
+        <th>**Duration**</th>
+        <th>**Event Coordinator**</th>
+        <th>**Number of Participants**</th>
+        <th>**Action**</th>
+
+    </tr>
+
+    @foreach(var g in @ViewBag.allofthegames){
+    <tr>
+        <td><a href="/activitydescription/@g.activityid">@g.activity</a></td>
+        <td>@g.date.ToString("dd MMM") @g.time</td>
+        <td>@g.duration</td> 
+        <td>@g.Coordinator.FirstName</td>
+        <td>@g.Participants.Count</td>
+        <td>
+            @{
+                if(@g.userid == @ViewBag.user){
+                    <a href="deleteevent/@g.activityid">Delete</a>
+                }
+                else{
+                    bool status= false; 
+                    foreach(var p in @g.Participants){
+                        if(p.userid == @ViewBag.user){
+                            status= true;
+                        }
+                    }
+                    if(status == false){
+                        <a href="joinevent/@g.activityid">Join</a>
+                    }
+                    else{
+                        <a href="leaveevent/@g.activityid">Leave</a>
+                    }
+                    
+                }
+            }
+        </td>
+    </tr> 
+    }
+</table>
+
+
+<form action="addactivity" method="Post">
+    <input type="submit" value="Create an Event!">
+</form>

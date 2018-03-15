@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add an Otter</title>
+</head>
+<body>
+    <h3>Update the stuff</h3>
+
+    <form action='/updaterecord/<%= animals.id %>' method='POST'>
+        Name:   <input type='text' name='name' value="<%= animals.name %>" ><br>
+        Pack Details:  <input type='textarea' name='pack_details' value="<%= animals.pack_details %>"><br>
+        <input type='submit' value='Update Info'>
+    </form>
+
+    <a href="/">Home</a>
+    <a href="/show/<%= animals._id %>">Show</a>
+    <a href="/delete/<%= animals._id %>">Delete</a>
+    <hr>  
+
+</body>

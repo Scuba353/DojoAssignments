@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/obj/Debug/netcoreapp2.0/DeckofCards.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/obj/Debug/netcoreapp2.0/DeckofCards.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/obj/Debug/netcoreapp2.0/DeckofCards.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/bin/Debug/netcoreapp2.0/DeckofCards.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/bin/Debug/netcoreapp2.0/DeckofCards.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/bin/Debug/netcoreapp2.0/DeckofCards.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/bin/Debug/netcoreapp2.0/DeckofCards.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/bin/Debug/netcoreapp2.0/DeckofCards.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/obj/Debug/netcoreapp2.0/DeckofCards.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/DeckofCards/obj/Debug/netcoreapp2.0/DeckofCards.pdb

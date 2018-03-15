@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/bin/Debug/netcoreapp2.0/RandCodeGen.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/bin/Debug/netcoreapp2.0/RandCodeGen.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/bin/Debug/netcoreapp2.0/RandCodeGen.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/bin/Debug/netcoreapp2.0/RandCodeGen.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/bin/Debug/netcoreapp2.0/RandCodeGen.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/obj/Debug/netcoreapp2.0/RandCodeGen.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/obj/Debug/netcoreapp2.0/RandCodeGen.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/obj/Debug/netcoreapp2.0/RandCodeGen.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/obj/Debug/netcoreapp2.0/RandCodeGen.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/RandCodeGen/obj/Debug/netcoreapp2.0/RandCodeGen.pdb

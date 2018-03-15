@@ -1,0 +1,17 @@
+﻿
+
+ 
+@{
+    ViewData["Title"] = "All Reviews";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Placehodler for all reviews query results</p>
+
+@foreach(var r in ViewBag.allreviews)
+{
+    <h3>Review for: @r.restaurantName @r.rating star(s)</h3>
+    <p>Reviewer:  @r.reviewerName, @r.datevisited</p>
+    <p>@r.review</p>   
+}

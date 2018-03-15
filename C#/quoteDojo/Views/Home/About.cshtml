@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Check out all my awesome quotes!</p>
+
+            @foreach(var q in ViewBag.allquotes){
+                <ul>
+                <li><p>Added by: @q["addedby"]</p>
+                <p>Quote: @q["quote"] Created At: @q["created_at"]</p></li>
+                </ul>
+                }
+            
+
+                

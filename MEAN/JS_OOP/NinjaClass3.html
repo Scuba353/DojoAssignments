@@ -1,0 +1,77 @@
+<html>
+<body>
+    <h2>ES6</h2>
+    <div id="message">
+   <p> Create a new class called Ninja with the following attributes:
+
+        name
+        health
+        speed (private)
+        strength (private)
+
+        Speed and strength should be 3 by default. 
+        Health should be 100 by default.
+
+        The Ninja class should have the following methods:
+
+        sayName() - This should log that Ninja's name to the console.
+        showStats() - This should show the Ninja's Strength and Speed, as well as their health.
+        drinkSake() - This should add +10 Health to the Ninja</p>
+    </div> 
+
+    
+<script>
+
+    class Ninja{
+        constructor(name){
+            this.name= name;
+            this.speed= 3;
+            this.strength= 3;
+            this.health= 100;
+        }
+        sayname(){
+            return console.log("This " + this.constructor.name + " name is "+ this.name);
+        }
+        stats(){
+            return console.log("health: "+ this.health+ " speed: " + this.speed + " strength: " + this.strength)
+        }
+        drinkSake(){
+            this.health = this.health+ 10;
+        }
+    }    
+
+    class Sensi extends Ninja {
+        constructor(name) {
+            super(name);
+            this.speed= 10;
+            this.strength= 10;
+            this.health= 200;
+            this.wisdom= 10;
+        }
+        sensistats(){
+           super.stats() 
+           return console.log("And my wisdom: "+ this.wisdom)
+        }
+        speakwisdom(){
+            super.drinkSake();
+            console.log("I am a very wise Sensi Master!")
+        }
+        
+}
+    
+
+    // const allyse= new Ninja("Allyse")
+    // allyse.sayname();
+    // allyse.stats();
+    // allyse.drinkSake();
+    // allyse.stats();
+    const mags= new Sensi("Mags")
+    mags.sayname();
+    mags.sensistats();
+    mags.speakwisdom();
+    mags.sensistats();
+
+
+</script>   
+</body>
+</html>

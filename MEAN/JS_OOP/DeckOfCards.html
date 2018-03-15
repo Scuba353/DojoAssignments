@@ -1,0 +1,104 @@
+<html>
+<body>
+    <script>
+        class Card{
+            constructor(face, suit, val){
+                this.face= face;
+                this.suit= suit;
+                this.val= val;
+            }
+        }    
+
+
+        class Deck {
+            constructor(){
+            this.cards= this.createdeck()
+            }
+
+            createdeck(){
+                var suit= ["Hearts", "Spades", "Diamonds", "Clubs"]
+                var face= ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
+                var val= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+                var cards = [];
+                //Function to create card objects for list
+                for(var i=0; i<suit.length; i++){
+                    for(var j=0; j<face.length; j++){  
+                        const card= new Card(suit[i],face[j],val[j])
+                        cards.push(card)
+                    } 
+                }
+                return cards;
+            }
+
+            shuffle(){
+                for(var i=0; i<this.cards.length; i++){
+                    var swap = Math.floor((Math.random()*51)+1);
+                    var temp = this.cards[i];
+                    this.cards[i]= this.cards[swap];
+                    this.cards[swap] = temp;
+               }
+               return this;
+            }
+            
+            reset(){
+                this.cards= this.createdeck()
+                return this.cards
+            }
+
+            deckdeal(){
+                var carddrawn = this.cards[0];
+                this.cards=this.cards.slice(1);
+                return carddrawn;
+            }
+
+        }
+
+        class Player{
+            constructor(name){
+                this.name= name;
+                this.hand= [];  
+            }
+            getcard(carddrawn){
+                this.hand.push(carddrawn)  
+                return this  
+            }
+            removecardfromhand(idx){
+                if(this.hand.length <= idx){
+                    console.log("You don't have that many cards");
+                    return null;
+                }
+                var handtemp = this.hand[idx];
+                this.hand[idx]= this.hand[this.hand.length-1];
+                this.hand[this.hand.length-1] = handtemp;
+                this.hand.pop()
+
+                return this.hand
+                }
+        }
+
+const newdeck= new Deck()
+console.log(newdeck.cards[0].face, newdeck.cards[0].suit);
+console.log("shuffling")
+console.log(newdeck.shuffle());
+// console.log(newdeck.reset())
+console.log(newdeck.cards.length)
+// console.log(newdeck.deckdeal())
+console.log(newdeck.cards.length)
+console.log(newdeck)
+const newplayer= new Player("allyse")
+console.log(newplayer.getcard(newdeck.deckdeal()))
+console.log(newplayer.getcard(newdeck.deckdeal()))
+console.log(newplayer.getcard(newdeck.deckdeal()))
+console.log(newplayer.getcard(newdeck.deckdeal()))
+console.log(newdeck.cards.length)
+console.log(newplayer.removecardfromhand(1))
+console.log(newplayer)
+
+
+
+
+
+
+</script>   
+</body>
+</html>

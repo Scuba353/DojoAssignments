@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Hello!</title>
+    </head>
+    <body>
+        <h1>Hello ASP.NET Mvc!</h1>
+            <!-- <p>@DateTime.Now</p> -->
+            @{
+                DateTime dt= DateTime.Now;
+                string day= dt.ToString("dddd");
+                string date= dt.ToString("dd");
+                string month= dt.ToString("MMMM");
+                string year= dt.ToString("yyyy");
+                string time= dt.ToString("HH:mm");
+
+                <p>@day, @date-@month-@year @time</p> 
+          
+                
+            }
+          
+    </body>
+</html>

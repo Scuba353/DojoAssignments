@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/bin/Debug/netcoreapp2.0/Dojodachi.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/bin/Debug/netcoreapp2.0/Dojodachi.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/bin/Debug/netcoreapp2.0/Dojodachi.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/bin/Debug/netcoreapp2.0/Dojodachi.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/bin/Debug/netcoreapp2.0/Dojodachi.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/obj/Debug/netcoreapp2.0/Dojodachi.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/obj/Debug/netcoreapp2.0/Dojodachi.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/obj/Debug/netcoreapp2.0/Dojodachi.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/obj/Debug/netcoreapp2.0/Dojodachi.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/Dojodachi/obj/Debug/netcoreapp2.0/Dojodachi.pdb

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Books and Likes</title>
+</head>
+<body>
+<h1>Users Table</h1>
+	<ol>
+		{% for x in user %}
+			<li>{{x.first_name}} {{x.last_name}} {{x.email}} {{x.liked_users}}</li>
+		{% endfor %}
+	</ol>
+
+	<h1>Users who like Book 1</h1>
+	<ol>
+		{% for z in like1 %}
+			<li>{{z.first_name}}</li>
+		{% endfor %}
+	</ol>
+	<h1>User who uploaded the Book 1</h1>
+	<ol>
+		<li> {{book1.uploader.first_name}} </li>	
+	</ol>
+	<h1>Users who like Book 2</h1>
+	<ol>
+		{% for m in like2 %}
+			<li>{{m.first_name}}</li>
+		{% endfor %}
+	</ol>
+	<h1>User who uploaded the Book 2</h1>
+	<ol>
+		<li> {{book2.uploader.first_name}} </li>
+	</ol>
+
+</body>
+</html>

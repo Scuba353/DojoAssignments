@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/bin/Debug/netcoreapp2.0/pokiInfo.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/bin/Debug/netcoreapp2.0/pokiInfo.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/bin/Debug/netcoreapp2.0/pokiInfo.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/bin/Debug/netcoreapp2.0/pokiInfo.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/bin/Debug/netcoreapp2.0/pokiInfo.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/obj/Debug/netcoreapp2.0/pokiInfo.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/obj/Debug/netcoreapp2.0/pokiInfo.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/obj/Debug/netcoreapp2.0/pokiInfo.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/obj/Debug/netcoreapp2.0/pokiInfo.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/pokiInfo/obj/Debug/netcoreapp2.0/pokiInfo.pdb

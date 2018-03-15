@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <p>Hello World!</p>
+    </body>
+    <script>
+        var _ = {
+            map: function(arr, func) {
+                for(var i=0; i<arr.length; i++){
+                    arr[i]=func(arr[i])
+                }
+                return arr
+                },
+           
+            reduce: function(arr, func5, total) { 
+                for(var i=0; i<arr.length; i++){
+                    total= func5(total, arr[i]) 
+                    }
+                    return total
+            },
+            find: function(arr, func2){   
+                for(var i=0; i<arr.length; i++){
+                    if(func2(arr[i]) == true){
+                        return arr[i]
+                    }
+                }
+            },
+            filter: function(arr, func3) { 
+                var newarr= [];
+                for(var i=0; i<arr.length; i++){
+                    if(func3(arr[i]) == true){
+                        newarr.push(arr[i])
+                    }
+                }
+                return newarr
+            },
+            reject: function(arr, func4) { 
+                var newarr= [];
+                for(var i=0; i<arr.length; i++){
+                    if(func4(arr[i]) == false){
+                        newarr.push(arr[i])
+                    }
+                }
+                return newarr
+            }
+        }
+
+        var maps= _.map([1, 2, 3], function(num){ return num * 3; });
+        console.log(maps)
+        
+        var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; })
+        console.log(even)
+
+        var alleven = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+        console.log(alleven)
+
+        var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+        console.log(odds)
+
+        var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
+        console.log(sum)
+
+    </script>
+
+</html>

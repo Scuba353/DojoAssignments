@@ -1,0 +1,27 @@
+﻿@model List<bankAccount.Models.Transaction>
+
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<p>Welcome @TempData["username"]</p>
+<p>Current Balance: @TempData["sum"]</p>
+<form action="/depositwithdraw" method="Post">
+    <p>Deposit/ Withdraw</p><input type"number" name="amount"><br>
+    <input type="Submit">
+</form>
+
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>Transaction Date</th>
+    </tr>
+    @foreach(Transaction x in Model){
+    <tr>
+        <td>@x.amount</td>
+       
+    </tr> }
+</table>

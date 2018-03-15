@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add travel plans</title>
+</head>
+<body>
+
+	<h2>Add travel plans</h2>
+	<form class="" action="/trip" method="Post" >
+	{% csrf_token %}
+	{{ tripForm.as_p }}
+	<input type="submit" value="Add">
+	</form>
+
+</body>
+</html>	
+
+
+

@@ -1,0 +1,74 @@
+<html>
+<body>
+    <div id="message">
+   <p> .punch()
+    Add a new method to your Ninja class called .punch(). 
+    This method will take another Ninja instance and 
+    subtract 5 Health from the Ninja we passed in. 
+    Your .punch() should display a console message like the below example.</p>
+    <!-- const blueNinja = new Ninja("Goemon");
+    const redNinja = new Ninja("Bill Gates");
+    redNinja.punch(blueNinja);
+    "Goemon was punched by Bill Gates and lost 5 Health!" -->
+
+    <p> .kick()
+    Now add a method to your Ninja class called .kick(). 
+    Kick will subtract 15 Health for each point of Strength the calling Ninja has, 
+    and like .punch() will take another Ninja instance.</p>
+    <!-- blueNinja.kick(redNinja);
+    "Bill Gates was kicked by Goemon and lost 15 Health!" -->
+
+    <p>Validations
+        Update .punch() and .kick() so that they only accept Instances of the Ninja class. 
+        Hint: You will need to find a way to check the constructor of an instance. 
+        You will often need to consult outside documentation to find solutions for particular features.</p>
+    </div> 
+
+    
+<script>
+    function Ninja(name){
+        const self= this;
+        const speed= 3;
+        const strength= 3;
+        this.name= name;
+        this.health= 100;
+
+        this.sayname= function(){
+            console.log("This Ninja's name is "+ this.name);
+        }
+        this.stats= function(){
+            console.log("health: "+ this.health+ " speed: " + speed + " strength: " + strength);
+        }
+        this.drinkSake= function(){
+            this.health = this.health+ 10;
+        }
+        this.punch= function(Ninja){
+            this.health= this.health-5
+            console.log(this.name + " was punched by "+ Ninja.name + " and lost 5 health!")
+        }
+        this.kick= function(target){
+            //because strength is a private variable 
+            //you can not access another ninjas strength
+            //here we are looking at the targets(this.kick) strength
+            //and then inflicting damage to the Ninja passed in as the health is not a private variable
+            if(target instanceof Ninja){
+                damage = 15 * strength
+                Ninja.health= Ninja.health - damage
+                console.log(Ninja.name + " was kicked by "+ this.name + " and lost " + (damage)+ " health!")
+            }
+        }
+    }
+    const allyse= new Ninja("Allyse")
+    allyse.sayname();
+    allyse.stats();
+    // allyse.drinkSake();
+    // allyse.stats();
+    const blue= new Ninja("Blue")
+    allyse.kick(blue);
+    blue.stats();
+    var x= "blue"
+    allyse.kick(x);
+
+</script>   
+</body>
+</html>

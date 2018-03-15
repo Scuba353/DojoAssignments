@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/obj/Debug/netcoreapp2.0/firstWeb.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/obj/Debug/netcoreapp2.0/firstWeb.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/obj/Debug/netcoreapp2.0/firstWeb.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/bin/Debug/netcoreapp2.0/firstWeb.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/bin/Debug/netcoreapp2.0/firstWeb.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/bin/Debug/netcoreapp2.0/firstWeb.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/bin/Debug/netcoreapp2.0/firstWeb.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/bin/Debug/netcoreapp2.0/firstWeb.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/obj/Debug/netcoreapp2.0/firstWeb.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/firstWeb/obj/Debug/netcoreapp2.0/firstWeb.pdb

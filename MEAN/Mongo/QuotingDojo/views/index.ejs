@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes</title>
+</head>
+<body>
+    <h3>Welcome to Quoting Dojo</h3>
+    <form action='/addquote' method='POST'>
+        Your Name:   <input type='text' name='name' value="Name"><br>
+        Your Quote:  <input type='textarea' name='my_quote' value="Add quote here"><br>
+        <input type='submit' value='Add Qutote'>
+    </form>
+
+    <form action='/results' method='POST'>
+        <input type='submit' value='Skip to Quotes'>
+    </form>
+</body>

@@ -1,0 +1,40 @@
+<html>
+<body>
+    <div id="message">
+        JS Intermediate!
+    </div> 
+    
+<script>
+    //Part 1
+    function starString(num){
+       return "\u272f".repeat(num)
+    }
+    console.log(starString(3))
+
+    //Part 2
+    function drawStars(array){
+        for(i=0; i<array.length; i++){
+            x= console.log("\u272f".repeat(array[i]))
+        }
+        return x
+    }
+    console.log(drawStars([4, 6, 1, 3, 5, 7, 25]))
+
+    //Part 3
+    function drawStars2(array2){
+        for(i=0; i<array2.length; i++){
+            if(typeof(array2[i])== "string"){
+                s= String(array2[i][0])
+                x= console.log(s.repeat(array2[i].length))
+            }
+            else{
+                x= console.log("\u272f".repeat(array2[i]))
+            }
+        }
+        return x
+    }
+    console.log(drawStars2([4, "Tom", 1, "Michael", 5, 7, "Jimmy Smith"]))
+
+</script>   
+</body>
+</html>

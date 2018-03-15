@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Trip[</title>
+</head>
+<body>
+		{{ tripinfo.destination }}
+		{{ tripinfo.description }}
+		{{ tripinfo.travel_start }}
+		{{ tripinfo.travel_end }}
+
+	<p>
+	{% for z in others %}
+	{{ z.name }}
+	{% endfor %}
+	</p>
+
+<a href="/success">Home</a>
+<a href="/">logout</a>
+
+</table>
+</body>
+</html>

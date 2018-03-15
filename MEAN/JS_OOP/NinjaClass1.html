@@ -1,0 +1,48 @@
+<html>
+<body>
+    <div id="message">
+   <p> Create a new class called Ninja with the following attributes:
+
+        name
+        health
+        speed (private)
+        strength (private)
+
+        Speed and strength should be 3 by default. 
+        Health should be 100 by default.
+
+        The Ninja class should have the following methods:
+
+        sayName() - This should log that Ninja's name to the console.
+        showStats() - This should show the Ninja's Strength and Speed, as well as their health.
+        drinkSake() - This should add +10 Health to the Ninja</p>
+    </div> 
+
+    
+<script>
+    function Ninja(name){
+        const speed= 3;
+        const strength= 3;
+        this.name= name;
+        this.health= 100;
+
+        this.sayname= function(){
+            console.log("This Ninja's name is "+ this.name);
+        }
+        this.stats= function(){
+            console.log("health: "+ this.health+ " speed: " + speed + " strength: " + strength);
+        }
+        this.drinkSake= function(){
+            this.health = this.health+ 10;
+        }
+    }
+    const allyse= new Ninja("Allyse")
+    allyse.sayname();
+    allyse.stats();
+    allyse.drinkSake();
+    allyse.stats();
+    
+
+</script>   
+</body>
+</html>

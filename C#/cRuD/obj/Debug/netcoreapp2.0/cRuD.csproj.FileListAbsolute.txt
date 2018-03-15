@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/bin/Debug/netcoreapp2.0/cRuD.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/bin/Debug/netcoreapp2.0/cRuD.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/bin/Debug/netcoreapp2.0/cRuD.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/bin/Debug/netcoreapp2.0/cRuD.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/bin/Debug/netcoreapp2.0/cRuD.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/obj/Debug/netcoreapp2.0/cRuD.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/obj/Debug/netcoreapp2.0/cRuD.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/obj/Debug/netcoreapp2.0/cRuD.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/obj/Debug/netcoreapp2.0/cRuD.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/cRuD/obj/Debug/netcoreapp2.0/cRuD.pdb

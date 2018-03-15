@@ -1,0 +1,15 @@
+<p>Activity: @ViewBag.game.activity</p>
+
+<p>Coordinator: @ViewBag.game.Coordinator.FirstName</p>
+
+
+<p>Date: @ViewBag.game.date.ToString()</p>
+<p>Time: @ViewBag.game.time.ToString()</p>
+<p>Duration: @ViewBag.game.duration.ToString()</p>
+
+<p>Description: @ViewBag.game.description</p>
+<p>Participants: 
+@foreach(var p in @ViewBag.game.Participants){
+    <p>@p.User.FirstName</p> 
+}
+</p>

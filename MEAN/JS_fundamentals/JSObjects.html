@@ -1,0 +1,51 @@
+<html>
+<body>
+    <div id="message">
+        Objects!
+    </div> 
+    
+<script>
+    //Challenge 1
+    let students = [
+    {name: 'Remy', cohort: 'Jan'},
+    {name: 'Genevieve', cohort: 'March'},
+    {name: 'Chuck', cohort: 'Jan'},
+    {name: 'Osmund', cohort: 'June'},
+    {name: 'Nikki', cohort: 'June'},
+    {name: 'Boris', cohort: 'June'}
+];
+
+    for(let person in students){
+       console.log("Name: "+ students[person].name + ", cohort: "+ students[person].cohort)   
+    }
+  
+
+    let users = {
+        employees: [
+            {'first_name':  'Miguel', 'last_name' : 'Jones'},
+            {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+            {'first_name' : 'Nora', 'last_name' : 'Lu'},
+            {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+        ],
+        managers: [
+        {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+        {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+        ]
+    };
+
+    console.log("EMPLOYEES")
+    for(let emp in users.employees){
+        var long= users.employees[emp].first_name.length+users.employees[emp].last_name.length
+        console.log(emp+ " - " +users.employees[emp].last_name+ ", " +users.employees[emp].first_name+ "- "+ (long) )   
+    }
+    console.log("MANAGERS")
+    for(let man in users.managers){
+        var long= users.managers[man].first_name.length+users.managers[man].last_name.length
+        console.log(man+ " - " +users.managers[man].last_name+ ", " +users.managers[man].first_name+ "- "+ (long) )   
+    }
+    
+
+</script>   
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<html>
+<body>
+    <div id="message">
+        JS Math!
+    </div> 
+    
+<script>
+    //Math 1
+    function zero_negativity(array){
+        for(i=0; i<array.length; i++){
+            if(array[i]<0){
+                return false
+            }
+        return true;
+        }
+    }
+    console.log(zero_negativity([-1, 2, 3, 4, 5]))
+    console.log(zero_negativity([1, 2, 3, 4, 5]))
+
+    //Math 2
+    function is_even(num){
+        if(num%2== 0){
+            return true;  
+        }
+        else{
+            return false;
+        }
+    }
+    console.log(is_even(5))
+    console.log(is_even(4))
+
+    //Math 3
+    function how_many_even(array2){
+        var count = 0;
+        for(i=0; i<array2.length; i++){
+            if(is_even(array2[i])== true){
+                count ++;
+            }
+        }
+        return count;     
+    }
+    console.log(how_many_even([-1, 2, 3, 4, 5]))
+    console.log(how_many_even([1, 2, 3, 4, 5]))
+
+    //Math 4
+    function dummy_array(num2){
+        var x= [];
+        for(i=0; i<=num2; i++){
+            x.push(Math.floor(Math.random() * 10))
+        }
+        return [x]
+    }
+   console.log(dummy_array(2))
+   console.log(dummy_array(6))
+
+    //Math 5
+    function random_choice(array3){
+        var pick= Math.floor(Math.random() * array3.length);
+        return array3[pick]
+    }
+    console.log(random_choice([-1, 2, 3, 4, 5]))
+    console.log(random_choice([1, 2, 3, 4, 5]))
+
+</script>   
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+	<style>
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	Name: {{ request.session.name }}<br> 
+	Dojo Location: {{ request.session.location }}<br>
+	Favorite Language:{{ request.session.language }}<br>
+	Comment(optional): {{ request.session.comment }}<br>
+
+	<form action='/back' method='post'>
+	{% csrf_token %}
+	<input type='submit' value='Go Back'>
+	</form>
+          
+</body>
+</html>

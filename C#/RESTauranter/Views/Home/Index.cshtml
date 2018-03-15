@@ -1,0 +1,25 @@
+﻿@model RESTauranter.Models.Review
+<div asp-validation-summary="All"></div>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <div class="col-md-12">
+        <h2>Write A Restaurant Review!</h2>
+        <form action="/writereview" method="Post">
+            <label asp-for= "reviewerName"></label>
+            <input asp-for= "reviewerName"><br>
+            <label asp-for= "restaurantName"></label>
+            <input asp-for= "restaurantName"><br>
+            <label asp-for= "review"></label>
+            <input asp-for= "review"><br>
+            <label asp-for= "datevisited"></label>
+            <input asp-for= "datevisited"><br>
+            <label asp-for= "rating"></label>
+            <input asp-for= "rating"><br>
+            <button>Submit</button>
+        </form>
+    </div>
+</div>

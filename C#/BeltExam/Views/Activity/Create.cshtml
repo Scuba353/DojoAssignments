@@ -1,0 +1,28 @@
+@model BeltExam.Models.Playit
+<div asp-validation-summary="All"></div>
+
+@{
+    ViewData["Title"] = "Create an Activity";
+}
+
+    <div class="col-md-12">
+        <h2>Ceaate an Activity</h2>
+        <form action="/createactivity" method="Post">
+            <label asp-for= "activity"></label>
+            <input asp-for= "activity"><br>
+            <label asp-for= "date"></label>
+            <input asp-for= "date"><br>
+            <label asp-for= "time"></label>
+            <input asp-for= "time"><br>
+            <label asp-for= "duration"></label>
+            <input asp-for= "duration">
+            <select name="span">
+                <option value="hour">hour</option>
+                <option value="day">day</option>
+                <option value="minute">minute</option>
+            </select><br>
+            <label asp-for= "description"></label>
+            <input asp-for= "description"><br>
+            <button>Create Event</button>
+        </form>
+    </div>

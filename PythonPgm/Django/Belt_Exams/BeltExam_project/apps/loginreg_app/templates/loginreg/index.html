@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Registration</title>
+</head>
+<body>
+
+	{% if messages %}
+		<ul>
+	    	{% for message in messages %}
+	    		<li>{{ message }}</li>
+	    	{% endfor %}
+		</ul>
+	{% endif %}
+
+	<h2>Registration Form</h2>
+	<form class="" action="/register" method="post" >
+	{% csrf_token %}
+	{{ regForm.as_p }}
+	<input type="submit" value="Register">
+	</form>
+
+
+	<h2>Login</h2>
+	<form class="" action="/login" method="post" >
+	{% csrf_token %}
+	{{ logForm.as_p }}
+	<input type="submit" value="Login">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model bankAccount.Models.LogRegView
+
+<div asp-validation-summary="All"></div>
+@ViewBag.userexist
+@ViewBag.emaildoesnotexist
+@ViewBag.invalidpassword
+
+@{
+    ViewData["Title"] = "Login Page";
+}
+    <div class="col-md-6">
+        <h2>Login</h2>
+        <form action="/login" method="Post">
+            <label asp-for= "Email"></label>
+            <input asp-for= "Email"><br>
+            <label asp-for= "Password"></label>
+            <input asp-for= "Password"><br>
+            <button>Login</button>
+        </form>
+
+    <a href="/">Need to register</a>
+    </div>

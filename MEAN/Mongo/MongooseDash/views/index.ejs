@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Animals</title>
+
+</head>
+<body>
+    <h1>Here is a list of the Otter Pack!</h1>
+    <% for (var x in allanimals) { %>
+        <h3>Name: <%= allanimals[x].name %></h3>
+        <h4>Pack Details: <%= allanimals[x].pack_details %></h4>
+        <a href="/show/<%= allanimals[x]._id %>">show</a>
+        <a href="/delete/<%= allanimals[x]._id %>">delete</a>
+        <a href="/update/<%= allanimals[x]._id %>">update</a>
+        <hr>
+    <% } %>
+    
+    <form action="/addnew" method="POST">
+	<input type="submit" value="Add a new Otter">
+	</form>
+          
+</body>
+</html>

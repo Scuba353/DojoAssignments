@@ -1,0 +1,25 @@
+#left {
+	text-align: left;
+border-right-style: solid;
+border-right-color: grey;
+border-right-width: 3px;
+display: inline-block;
+}
+
+#rigth{
+text-align: right;
+display: inline-block;
+}
+
+.red{
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.green{
+	color: green;
+}
+.size{
+	font-size: 20px;
+}

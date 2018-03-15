@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 HelveticaNeue;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;
+\red250\green226\blue62;\red26\green26\blue26;\red242\green244\blue245;\red83\green83\blue83;\red255\green255\blue255;
+\red57\green55\blue55;\red79\green123\blue61;\red23\green23\blue23;\red202\green202\blue202;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c0\c0\c0;
+\cssrgb\c98431\c89804\c30588;\cssrgb\c13333\c13333\c13333;\cssrgb\c96078\c96471\c96863;\cssrgb\c40000\c40000\c40000;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c28627\c27843\c27843;\cssrgb\c37647\c54510\c30588;\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 > use my_first_db\
+> db.createCollection("students")\
+> show collections\
+\
+Insert\
+> db.students.insert(\{name: "Allyse",  home_state: "NY", lucky_num: 15, birthday: \{month: 02, day: 11, year: 1987\}\})\
+\
+Find All\
+> db.students.find().pretty()\
+\
+Find one condition OR another condition\
+> db.students.find(\{$or: [\{home_state: "WA"\}, \{home_state: "CA"\}]\})\
+\
+Greater than\
+> db.students.find(\{lucky_num: \{$gt: 3\}\}) \
+\
+Less than or equal\
+> db.students.find(\{lucky_num: \{$lte: 10\}\})\
+\
+Between two numbers\
+> db.students.find(\{lucky_num: \{$gt: 1, $lte: 9\}\})\
+\
+Update record with a new field\
+> db.students.update(\{name: "Max"\}, \{$set: \{interest: ["coding", "brunch", "MongoDB"]\}\})\
+\
+Add to an existing field\
+> db.students.update(\{name: "Allyse"\}, \{$push: \{interest: "Hiking"\}\})\
+\
+Remove last item added to an Array\
+> db.students.update(\{name: "Joe"\}, \{$pop: \{interest: "taxes"\}\})\
+\
+Remove entire document\
+> db.students.remove(\{home_state: "CA"\})\
+\
+Removes just one record based on the criteria passed even if more than one match\
+> db.students.remove(\{lucky_num: \{$gt: 5\}\}, true)\
+\
+Update ONE of \'93X\'94 with a requirement\
+> db.students.updateOne(\{home_state: "WA"\}, \{$set: \{num_of_belts: 1\}\})\
+\
+Update MANY of \'93X\'94 with a requirement\
+> db.students.updateMany(\{home_state: "NY"\}, \{$set: \{num_of_belts: 1\}\})\
+\
+Date field stuff\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec4 $currentDate\
+\pard\pardeftab720\sl480\partightenfactor0
+
+\fs28 \cf6 \cb7 \strokec6  $currentDate\cf8 \strokec8 :\cf6 \strokec6  \{ \cf8 \strokec8 <\cf6 \strokec6 field1\cf8 \strokec8 >:\cf6 \strokec6  \cf8 \strokec8 <\cf6 \strokec6 typeSpecification1\cf8 \strokec8 >\cf6 \strokec6 , ... \} \}\
+\pard\pardeftab720\sl360\sa480\partightenfactor0
+
+\fs32 \cf4 \cb9 \strokec4 <typeSpecification>
+\f2 \cf10 \strokec10 \'a0can be either:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls1\ilvl0\cf10 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 a boolean\'a0
+\f1 \cf4 \strokec4 true
+\f2 \cf10 \strokec10 \'a0to set the field value to the current date as a Date, or\cb1 \
+\ls1\ilvl0\cb9 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 a document\'a0
+\f1 \cf4 \strokec4 \{\'a0$type:\'a0"timestamp"\'a0\}
+\f2 \cf10 \strokec10 \'a0or\'a0
+\f1 \cf4 \strokec4 \{\'a0$type:\'a0"date"\'a0\}
+\f2 \cf10 \strokec10 \'a0which explicitly specifies the type. The operator is\'a0
+\i case-sensitive
+\i0 \'a0and accepts only the lowercase\'a0
+\f1 \cf4 \strokec4 "timestamp"
+\f2 \cf10 \strokec10 \'a0or the lowercase\'a0
+\f1 \cf4 \strokec4 "date"
+\f2 \cf10 \strokec10 .\cb1 \
+\pard\pardeftab720\sl480\partightenfactor0
+
+\f1\fs28 \cf6 \cb7 \strokec6  $currentDate\cf8 \strokec8 :\cf6 \strokec6  \{ \cf8 \strokec8 <\cf6 \strokec6 field1\cf8 \strokec8 >:\cf6 \strokec6  \cf8 \strokec8 <\cf6 \strokec6 typeSpecification1\cf8 \strokec8 >\cf6 \strokec6 , ... \} \}\
+\pard\pardeftab720\sl360\sa480\partightenfactor0
+
+\fs32 \cf4 \cb9 \strokec4 <typeSpecification>
+\f2 \cf10 \strokec10 \'a0can be either:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl360\partightenfactor0
+\ls2\ilvl0\cf10 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 a boolean\'a0
+\f1 \cf4 \strokec4 true
+\f2 \cf10 \strokec10 \'a0to set the field value to the current date as a Date, or\cb1 \
+\ls2\ilvl0\cb9 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 a document\'a0
+\f1 \cf4 \strokec4 \{\'a0$type:\'a0"timestamp"\'a0\}
+\f2 \cf10 \strokec10 \'a0or\'a0
+\f1 \cf4 \strokec4 \{\'a0$type:\'a0"date"\'a0\}
+\f2 \cf10 \strokec10 \'a0which explicitly specifies the type. The operator is\'a0
+\i case-sensitive
+\i0 \'a0and accepts only the lowercase\'a0
+\f1 \cf4 \strokec4 "timestamp"
+\f2 \cf10 \strokec10 \'a0or the lowercase\'a0
+\f1 \cf4 \strokec4 "date"
+\f2 \cf10 \strokec10 .\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs24 \cf11 \cb12 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec11 <!-- <% for (var y in <%= message[x].comments%>) \{ %>\cf13 \cb1 \strokec13 \
+\cf11 \cb12 \strokec11     <h4>Comments: <%= message[x].comments[y].name%>, <%= message[x].comments[y].comment%></h4>\cf13 \cb1 \strokec13 \
+\cf11 \cb12 \strokec11     <% \} %> -->\cf13 \cb1 \strokec13 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs22 \cf2 \cb3 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 \
+}

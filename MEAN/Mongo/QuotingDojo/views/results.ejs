@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+
+</head>
+<body>
+    <h3>Here are some awesome quotes!!</h3>
+    <% for (var x in allquotes) { %>
+        <h3>Name: <%= allquotes[x].name %></h3>
+        <h4>Quote: <%= allquotes[x].my_quote %></h4>
+        <h4>Quote: <%= allquotes[x].created_at %></h4>
+        <hr>
+    <% } %>
+    
+    <form action="/" method="GET">
+	<input type="submit" value="Go Back">
+	</form>
+          
+</body>
+</html>

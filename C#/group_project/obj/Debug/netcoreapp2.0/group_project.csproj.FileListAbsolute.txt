@@ -1,0 +1,10 @@
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/bin/Debug/netcoreapp2.0/group_project.deps.json
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/bin/Debug/netcoreapp2.0/group_project.runtimeconfig.json
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/bin/Debug/netcoreapp2.0/group_project.runtimeconfig.dev.json
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/bin/Debug/netcoreapp2.0/group_project.dll
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/bin/Debug/netcoreapp2.0/group_project.pdb
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/obj/Debug/netcoreapp2.0/group_project.csproj.CoreCompileInputs.cache
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/obj/Debug/netcoreapp2.0/group_project.AssemblyInfoInputs.cache
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/obj/Debug/netcoreapp2.0/group_project.AssemblyInfo.cs
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/obj/Debug/netcoreapp2.0/group_project.dll
+/Users/reubenverdusco/Desktop/DojoAssignments/netCore/group_project/obj/Debug/netcoreapp2.0/group_project.pdb

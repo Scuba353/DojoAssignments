@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session Words</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'words.css' %}">
+
+</head>
+<body>
+  <div id='left'>
+  <h3>Add a New Word and pick your font decorations!</h3>
+      <form action='/word/process' method='post'>
+        {% csrf_token %}
+        <input type='text' name='word' value='word'><br>
+        <h4> Choose your Color</h4>
+        <input type="radio" name="Red">Red<br>
+        <input type="hidden" name="color" value='red'>
+        <input type="radio" name="Blue">Blue<br>
+        <input type="hidden" name="color" value='blue'>
+        <input type="radio" name="Green">Green<br>
+        <input type="hidden" name="color" value='green'>
+  			<input type="checkbox" name="font"> show in BIG font<br>
+        <input type="hidden" name="font" value='big'>
+        <input type='submit' value='Submit'>
+      </form>
+  </div>
+  <div id='right'>
+<!--      <uL>
+    {% for words in request.session.words %}
+      <li class={{word.color}}> {{wordlist}}</li> -->
+    <!--   {{words.color}} {{words.context}}
+    {% endfor %}
+  </uL>  -->
+
+
+
+
+
+  </div>
+</body>
+</html>

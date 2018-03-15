@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/bin/Debug/netcoreapp2.0/formSubmission.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/bin/Debug/netcoreapp2.0/formSubmission.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/bin/Debug/netcoreapp2.0/formSubmission.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/bin/Debug/netcoreapp2.0/formSubmission.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/bin/Debug/netcoreapp2.0/formSubmission.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/obj/Debug/netcoreapp2.0/formSubmission.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/obj/Debug/netcoreapp2.0/formSubmission.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/obj/Debug/netcoreapp2.0/formSubmission.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/obj/Debug/netcoreapp2.0/formSubmission.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/formSubmission/obj/Debug/netcoreapp2.0/formSubmission.pdb

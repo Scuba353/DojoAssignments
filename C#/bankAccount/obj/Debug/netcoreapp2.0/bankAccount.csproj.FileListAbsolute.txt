@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/obj/Debug/netcoreapp2.0/bankAccount.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/obj/Debug/netcoreapp2.0/bankAccount.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/obj/Debug/netcoreapp2.0/bankAccount.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/bin/Debug/netcoreapp2.0/bankAccount.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/bin/Debug/netcoreapp2.0/bankAccount.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/bin/Debug/netcoreapp2.0/bankAccount.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/bin/Debug/netcoreapp2.0/bankAccount.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/bin/Debug/netcoreapp2.0/bankAccount.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/obj/Debug/netcoreapp2.0/bankAccount.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/bankAccount/obj/Debug/netcoreapp2.0/bankAccount.pdb

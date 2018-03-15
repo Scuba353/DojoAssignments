@@ -1,0 +1,10 @@
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/obj/Debug/netcoreapp2.0/quoteDojo.csproj.CoreCompileInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/obj/Debug/netcoreapp2.0/quoteDojo.AssemblyInfoInputs.cache
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/obj/Debug/netcoreapp2.0/quoteDojo.AssemblyInfo.cs
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/bin/Debug/netcoreapp2.0/quoteDojo.deps.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/bin/Debug/netcoreapp2.0/quoteDojo.runtimeconfig.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/bin/Debug/netcoreapp2.0/quoteDojo.runtimeconfig.dev.json
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/bin/Debug/netcoreapp2.0/quoteDojo.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/bin/Debug/netcoreapp2.0/quoteDojo.pdb
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/obj/Debug/netcoreapp2.0/quoteDojo.dll
+/Users/allysefischer/Desktop/DojoAssignments/C#/quoteDojo/obj/Debug/netcoreapp2.0/quoteDojo.pdb
